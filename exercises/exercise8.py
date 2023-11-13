@@ -1,3 +1,5 @@
+import os
+
 """Diccionarios"""
 
 
@@ -11,6 +13,15 @@ Definir un diccionario para un 'Cliente' que contenga los siguiente valores:
 
 # COMPLETAR - INICIO
 
+Cliente = {
+    "Nombre" : "Mario Pedernera",
+    "DNI" : 56895632,
+    "Domicilio" : "Los alamos 4509",
+    "Compras" : ["cafetera", "TV 50 pulgadas", "mouse gamer"],
+}
+
+print(f"{Cliente}")
+
 # COMPLETAR - FIN
 
 assert (
@@ -20,6 +31,7 @@ assert (
     and (Cliente["Compras"] == ["cafetera", "TV 50 pulgadas", "mouse gamer"])
 )
 
+os.system("pause")
 
 """
 Definir un diccionario para las 'Compras' que contenga los siguiente valores:
@@ -30,13 +42,21 @@ Definir un diccionario para las 'Compras' que contenga los siguiente valores:
 
 # COMPLETAR - INICIO
 
+Compras = {
+    "Mario Pedernera" : ["cafetera", "TV 50 pulgadas", "mouse gamer"],
+    "Ezequiel Castello" : ["ipad", "ipod", "iphone"],
+    "Pablo Piristrelli" : ["Reproductor de CD", "Videograbadora"],
+}
+
 # COMPLETAR - FIN
 
 assert (
-    (Compras["Mario Pedernera"] == ["cafetera", "TV 50 pulgads", "mouse gamer"])
+    (Compras["Mario Pedernera"] == ["cafetera", "TV 50 pulgadas", "mouse gamer"])
     and (Compras["Ezequiel Castello"] == ["ipad", "ipod", "iphone"])
     and (Compras["Pablo Piristrelli"] == ["Reproductor de CD", "Videograbadora"])
 )
+
+os.system("pause")
 
 
 """
@@ -51,12 +71,17 @@ diccionario = {
     "clave4": [1, 2, 3, 4],
 }
 
+clave1 = diccionario.get("clave1")
+
 # COMPLETAR - INICIO
+
+print(f"El valor de la clave 1 es: {clave1}")
 
 # COMPLETAR - FIN
 
 assert clave1 == 234
 
+os.system("pause")
 
 """
 Dado el siguiente diccionario forzar la obtención de un valor por defecto igual a 5 utilizando
@@ -73,9 +98,15 @@ diccionario_2 = {
 
 # COMPLETAR - INICIO
 
+clave5 = diccionario_2.get("clave5", 5)
+
+print(f"El valor de la clave 5 es: {clave5}")
+
 # COMPLETAR - FIN
 
 assert clave5 == 5
+
+os.system("pause")
 
 
 """
@@ -91,9 +122,15 @@ diccionario_3 = {
 
 # COMPLETAR - INICIO
 
+keys = list(diccionario_3.keys())
+
+print(f"Listado de keys: {keys}")
+
 # COMPLETAR - FIN
 
 assert keys == ["clave1", "clave2", "clave3", "clave4"]
+
+os.system("pause")
 
 
 """
@@ -109,9 +146,16 @@ diccionario_4 = {
 
 # COMPLETAR - INICIO
 
+values = list(diccionario_4.values())
+
+print(f"Listado de values: {values}")
+
+
 # COMPLETAR - FIN
 
 assert values == [1234, 4567, 8910, 1112]
+
+os.system("pause")
 
 
 """
@@ -128,9 +172,15 @@ diccionario_5 = {
 
 # COMPLETAR - INICIO
 
+items = list(diccionario_5.items())
+
+print(f"Listado de items: {items}")
+
 # COMPLETAR - FIN
 
 assert items == [(1, 1111), (2, 2222), (3, 3333), (4, 4444)]
+
+os.system("pause")
 
 
 """
@@ -152,6 +202,10 @@ diccionario_7 = {
 }
 
 # COMPLETAR - INICIO
+
+diccionario_6.update(diccionario_7)
+
+print(f"Diccionario 6 actualizado: {diccionario_6}")
 
 # COMPLETAR - FIN
 

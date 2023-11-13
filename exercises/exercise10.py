@@ -9,6 +9,10 @@ A = 5
 
 # COMPLETAR - INICIO
 
+variable_01 = bool(A)
+
+print(f"La variable 01 es: {variable_01}")
+
 # COMPLETAR - FIN
 
 assert variable_01 is True
@@ -21,6 +25,10 @@ Interpretar como booleano la siguente variable y guardar el valor resultante en 
 Domicilio = ""
 
 # COMPLETAR - INICIO
+
+variable_02 = bool(Domicilio)
+
+print(f"{variable_02}")
 
 # COMPLETAR - FIN
 
@@ -35,6 +43,10 @@ Domicilio = "Alsina 2446" or "Pueyrredón y la vía"
 
 # COMPLETAR - INICIO
 
+variable_03 = bool(Domicilio)
+
+print(f"Variable 03: {variable_03}")
+
 # COMPLETAR - FIN
 
 assert variable_03 is True
@@ -47,6 +59,10 @@ Interpretar como booleano la siguente variable y guardar el valor resultante en 
 lista_de_compras = "No comprar nada" and ["Pan", "Aceite", "Sal"]
 
 # COMPLETAR - INICIO
+
+variable_04 = bool(lista_de_compras)
+
+print(f"Variable 04: {variable_04}")
 
 # COMPLETAR - FIN
 
@@ -61,6 +77,10 @@ lista_de_ids = 0 and [1236, 5565, 8956, 2534]
 
 # COMPLETAR - INICIO
 
+variable_05 = bool(lista_de_ids)
+
+print(f"Variable 05: {variable_05}")
+
 # COMPLETAR - FIN
 
 assert variable_05 is False
@@ -73,6 +93,10 @@ Interpretar como booleano la siguente variable y guardar el valor resultante en 
 diccionario = {} and {"Nombre": "Alberto Paz", "DNI": 12365855}
 
 # COMPLETAR - INICIO
+
+variable_06 = bool(diccionario)
+
+print(f"Variable 06: {variable_06}")
 
 # COMPLETAR - FIN
 

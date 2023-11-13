@@ -1,3 +1,5 @@
+import os
+
 """Strings"""
 
 
@@ -10,11 +12,17 @@ variable_01 = "¡Buenos "
 variable_02 = "días "
 variable_03 = "a todos!"
 
+strings_concatenados = variable_01 + variable_02 + variable_03
+
 # COMPLETAR - INICIO
+
+print(f"Variables concatenadas: {strings_concatenados}")
 
 # COMPLETAR - FIN
 
 assert strings_concatenados == "¡Buenos días a todos!"
+
+os.system("pause")
 
 
 """
@@ -27,11 +35,17 @@ usar operadores).
 # "estoy concatenando "
 # "strings!"
 
+strings_concatenados = "¡Mamá ""estoy concatenando ""strings!"
+
 # COMPLETAR - INICIO
+
+print(f"Variables concatenadas sin el operador +: {strings_concatenados}")
 
 # COMPLETAR - FIN
 
 assert strings_concatenados == "¡Mamá estoy concatenando strings!"
+
+os.system("pause")
 
 
 """
@@ -44,12 +58,19 @@ variable_01 = "Le debo "
 variable_02 = 600
 variable_03 = " pesos a un amigo."
 
+variable_02 = str(variable_02)
+
+strings_concatenados = variable_01 + variable_02 + variable_03
+
 # COMPLETAR - INICIO
+
+print(f"Variables concatenadas pasando la 02 a string y usando el operador +: {strings_concatenados}")
 
 # COMPLETAR - FIN
 
 assert strings_concatenados == "Le debo 600 pesos a un amigo."
 
+os.system("pause")
 
 """
 Formatear las siguientes variables en un único string.
@@ -65,12 +86,17 @@ variable_05 = "Ezequiel"
 
 # COMPLETAR - INICIO
 
+strings_concatenados = "{}{}{}{}{} Se llama {}".format(variable_01, variable_02, variable_03, variable_02, variable_04, variable_05)
+
+print(f"{strings_concatenados}")
+
 # COMPLETAR - FIN
 
 assert (
     strings_concatenados == "Le debo 6 pesos a un amigo hace 6 años. Se llama Ezequiel"
 )
 
+os.system("pause")
 
 """
 Formatear las siguientes variables en un único string.
@@ -84,6 +110,12 @@ variable_04 = 4
 
 # COMPLETAR - INICIO
 
+strings_concatenados = f"{variable_01}{variable_02}{variable_03}{variable_04}"
+
+print(f"{strings_concatenados}")
+
 # COMPLETAR - FIN
 
 assert strings_concatenados == "Le pagué 2 pesos que le debía a Ezequiel, me faltan $4"
+
+os.system("pause")
